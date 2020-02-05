@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <div class="container">
+    <img
+      src="./assets/images/logo_sk.png"
+      class="logo"
+      alt=""
+      routerLink="/dashboard"
+    />
+    <mat-icon class="logout-icon float-right" (click)="logout()">power_settings_new</mat-icon>
+  </div>
+  <span class="user-login float-right">Hello, {{user.email}}</span>
+</mat-toolbar>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
